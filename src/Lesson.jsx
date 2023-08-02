@@ -1,5 +1,6 @@
 import React from "react";
+import Post from "./post.mdx";
 
-export default function Lesson({ children }) {
-  return <div>{children}</div>;
+export default function Lesson() {
+  return <Post></Post>;
 }

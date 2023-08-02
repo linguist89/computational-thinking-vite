@@ -11,6 +11,7 @@
     border-radius: 0.4rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     background-color: rgb(216, 216, 216);
+    cursor: pointer;
 }
 
 .BodyGrid .card .title {
