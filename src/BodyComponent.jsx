@@ -1,5 +1,5 @@
 import "./BodyComponent.css";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function BodyComponent() {
   const lessons = [
@@ -35,25 +35,18 @@ export default function BodyComponent() {
     },
   ];
 
-  const handleClick = () => {
-    return <Link to="/computational-thinking-vite/lesson-1">Home</Link>;
-  };
-
   return (
     <div className="BodyGrid">
       {lessons.map((lesson, index) => {
         return (
-          <div
-            className="card"
-            key={lesson.title}
-            onClick={() => handleClick(lesson)}
-          >
+          <div className="card" key={lesson.title}>
             <h2 className="title">{lesson.title}</h2>
             <h3 className="subtitle">{lesson.subtitle}</h3>
             <p className="explanation">{lesson.explanation}</p>
-            <Link to="/computational-thinking-vite/lesson-1">{`View Lesson ${
-              index + 1
-            }`}</Link>
+            <Link
+              className="cardLink"
+              to={`/computational-thinking-vite/${lesson.id}`}
+            >{`View Lesson ${index + 1}`}</Link>
           </div>
         );
       })}
