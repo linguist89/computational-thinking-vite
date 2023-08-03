@@ -1,13 +1,17 @@
 import "./Header.css";
+import "./Buttons.css";
+import HeaderImage from "./assets/chcaa_logo.png";
 
 export default function Header() {
   return (
     <header className="Header">
       <div className="HeaderWrapper">
-        <button>LOGO</button>
+        <div className="Logo">
+          <img src={HeaderImage} alt="Business Ideas logo" />
+        </div>
         <div className="HeaderButtonsWrapper">
-          <button>About</button>
-          <button>Lesson</button>
+          <button className="button">About</button>
+          <button className="button">Lessons</button>
         </div>
       </div>
     </header>

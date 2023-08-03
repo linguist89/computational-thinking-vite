@@ -3,6 +3,14 @@
     grid-template-columns: repeat(2, 6fr);
     column-gap: 1rem;
     padding: 5rem;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .BodyGrid {
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 8rem;
+    }
 }
 
 .BodyGrid .card {
@@ -10,21 +18,22 @@
     margin: 1rem;
     border-radius: 0.4rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: rgb(216, 216, 216);
+    background-color: #ffffff;
 }
 
 .BodyGrid .card .title {
     margin-bottom: 0.8rem;
+    color: #004543;
 }
 
 .BodyGrid .card .subtitle {
     margin-bottom: 0.8rem;
-    color: #777;
+    color: #004543;
 }
 
 .BodyGrid .cardLink {
     display: inline-block;
-    border: 1px solid #ffffff;
+    border: 1px solid #004543;
     border-radius: 0.4rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -35,23 +44,23 @@
     vertical-align: middle;
     cursor: pointer;
     background-color: #ffffff;
-    color: #1F5668;
+    color: #004543;
     text-decoration: none;
 }
 
 .BodyGrid .cardLink:hover {
-    background-color: #dad7d7;
-    border-color: #dad7d7;
-    color: #1F5668;
+    background-color: #0F918D;
+    border-color: #0F918D;
+    color: #ffffff;
 }
 
 .BodyGrid .cardLink:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(41, 26, 62, 0.5);
+    box-shadow: 0 0 0 3px #0F918D;
 }
 
 .BodyGrid .cardLink:active {
-    background-color: #153c49;
+    background-color: #004543;
     color: #ffffff;
 }
 
