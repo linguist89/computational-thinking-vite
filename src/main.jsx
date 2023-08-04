@@ -1,6 +1,7 @@
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import BodyComponent from "./BodyComponent.jsx";
+import Header from "./Header.jsx";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Lesson from "./Lesson";
@@ -12,9 +13,13 @@ import Lesson5Content from "./lesson-5.mdx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Header></Header>
     <BrowserRouter>
       <Routes>
-        <Route path="/computational-thinking-vite" element={<App />}></Route>
+        <Route
+          path="/computational-thinking-vite"
+          element={<BodyComponent />}
+        ></Route>
         <Route
           path="/computational-thinking-vite/lesson-1"
           element={

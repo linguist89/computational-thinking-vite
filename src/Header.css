@@ -18,6 +18,19 @@
     padding-right: 1rem;
 }
 
+.HeaderText{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #004543;
+}
+
+/* HeaderText should be respsonsive on mobile devices */
+@media (max-width: 768px) {
+    .HeaderText {
+        display: none;
+    }
+}
+
 .HeaderButtonsWrapper {
     display: flex;
     flex-direction: row;

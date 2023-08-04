@@ -9,6 +9,9 @@ export default function Header() {
         <div className="Logo">
           <img src={HeaderImage} alt="Business Ideas logo" />
         </div>
+        <div className="HeaderText">
+          <h1>Problem Solving</h1>
+        </div>
         <div className="HeaderButtonsWrapper">
           <button className="button">About</button>
           <button className="button">Lessons</button>
