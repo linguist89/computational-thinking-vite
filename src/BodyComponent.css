@@ -7,19 +7,33 @@
     padding-top: 8rem;
 }
 
-@media screen and (max-width: 768px) {
-    .BodyGrid {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem;
-    }
-}
-
 .BodyGrid .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     margin: 1rem;
     border-radius: 0.4rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .BodyGrid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem;
+        padding-top: 7rem;
+    }
+
+    .BodyGrid .card {
+        flex-direction: row-reverse;
+    }
+}
+
+.BodyGrid img {
+    height: 10rem;
+    width: 10rem;
+    margin-right: 1rem;
 }
 
 .BodyGrid .card .title {

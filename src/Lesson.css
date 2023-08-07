@@ -1,5 +1,6 @@
 .Lesson {
     padding: 0rem 20rem;
+    padding-top: 10vh;
 }
 
 @media (max-width: 768px) {

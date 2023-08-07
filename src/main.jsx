@@ -13,11 +13,11 @@ import Lesson5Content from "./lesson-5.mdx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Header></Header>
     <BrowserRouter>
+      <Header></Header>
       <Routes>
         <Route
-          path="/computational-thinking-vite"
+          path="/computational-thinking-vite/"
           element={<BodyComponent />}
         ></Route>
         <Route
