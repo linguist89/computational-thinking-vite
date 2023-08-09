@@ -19,6 +19,10 @@
     background-color: #ffffff;
 }
 
+.BodyGrid .leftCol, .BodyGrid .rightCol {
+    width: 12rem;
+}
+
 @media screen and (max-width: 768px) {
     .BodyGrid {
         grid-template-columns: repeat(1, 1fr);
