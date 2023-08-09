@@ -8,7 +8,7 @@ export default defineConfig(async () => {
     optimizeDeps: {
       include: ["react/jsx-runtime"],
     },
-    base: "/",
+    base: "/computational-thinking-vite/",
     plugins: [react(), mdx.default({ remarkPlugins: [] })],
   }
 })
