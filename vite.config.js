@@ -15,7 +15,7 @@ export default defineConfig(async () => {
       mdx.default({ remarkPlugins: [] }),
       viteStaticCopy({
         targets: [
-          { src: './src/assets', dest: './dist/assets' }
+          { src: './src/assets', dest: '.' }
         ]
       })
     ],
