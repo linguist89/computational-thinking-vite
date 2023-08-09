@@ -7,31 +7,31 @@ export default function BodyComponent() {
       id: "lesson-1",
       title: "Lesson 1",
       explanation: "Here we introduce the basics.",
-      imageUrl: "./src/assets/problem_solving.png",
+      imageUrl: "./assets/problem_solving.png",
     },
     {
       id: "lesson-2",
       title: "Lesson 2",
       explanation: "We dive deeper into the topic.",
-      imageUrl: "./src/assets/books.png",
+      imageUrl: "./assets/books.png",
     },
     {
       id: "lesson-3",
       title: "Lesson 3",
       explanation: "Advanced topics are introduced here.",
-      imageUrl: "./src/assets/computers.png",
+      imageUrl: "./assets/computers.png",
     },
     {
       id: "lesson-4",
       title: "Lesson 4",
       explanation: "Let's apply what we've learned.",
-      imageUrl: "./src/assets/design.png",
+      imageUrl: "./assets/design.png",
     },
     {
       id: "lesson-5",
       title: "Lesson 5",
       explanation: "Recap and next steps.",
-      imageUrl: "./src/assets/creative_academia.png",
+      imageUrl: "./assets/creative_academia.png",
     },
   ];
 
